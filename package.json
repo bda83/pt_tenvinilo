@@ -1,0 +1,35 @@
+{
+  "name": "brunoDiazArias",
+  "version": "1.0.0",
+  "description": "Technical test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css-compile": "node-sass --include-path node_modules --output-style compressed --source-map true --source-map-contents true --precision 6 assets/src/scss -o assets/dist/css/",
+    "css-prefix": "postcss --replace assets/dist/css/styles.css --use autoprefixer --map",
+    "css": "npm run css-compile && npm run css-prefix",
+    "watch": "nodemon -e scss -x \"npm run css && webpack --config webpack.dev.js\"",
+    "build": "npm run css && webpack --config webpack.prod.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bda83/pt_tenvinilo.git"
+  },
+  "keywords": [],
+  "author": "Bruno Diaz Arias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bda83/pt_tenvinilo/issues"
+  },
+  "homepage": "https://github.com/bda83/pt_tenvinilo#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "clean-webpack-plugin": "^4.0.0",
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20",
+    "postcss-cli": "^10.1.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-merge": "^5.8.0"
+  }
+}

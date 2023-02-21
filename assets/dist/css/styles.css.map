@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/scss/styles.scss"],"names":[],"mappings":"AAEA,KACI,qBAAsB,CACtB,WAAY","file":"styles.css","sourcesContent":["// @import \"../../../node_modules/bootstrap/scss/bootstrap\";\n\nbody {\n    background-color: pink;\n    color: green;\n}"]}
