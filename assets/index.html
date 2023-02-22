@@ -4,11 +4,209 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruno Díaz Arias</title>
-    <link rel="stylesheet" href="assets/dist/css/styles.css">
+    <title>Tenvinilo - Bruno Díaz Arias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dist/fonts/style.css">
+    <link rel="stylesheet" href="dist/css/styles.css">
 </head>
 <body>
+    <header>
+        <section class="promotions">
+            <i class="promotions__icon icon icon-arrow-right"></i>
+            <p class="promotions__text"><strong class="promotions__text--important">5% de descuento</strong> uniéndote a nuestra newsletter</p>
+        </section>
 
-    <script src="assets/dist/js/scripts.js"></script>
+        <section class="header">
+            <a href="https://www.tenvinilo.com/" title="Tenvinilo.com">
+                <img src="dist/img/logo/logo.jpeg" alt="Logotipo" class="logoTenvinilo">
+            </a>
+            <ul class="menu menu--top">
+                <li>
+                    <a href="#" title="Cuenta de usuario"><i class="menu__item icon icon-user"></i></a>
+                </li>
+                <li>
+                    <a href="#" title="Carrito"><i class="menu__item icon icon-cart"></i></a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="menu__item hamburger-icon">
+                            <span class="hamburger-icon__stick"></span>
+                            <span class="hamburger-icon__stick"></span>
+                            <span class="hamburger-icon__stick"></span>
+                          </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <nav class="menu-mobile">
+            <ul class="menu-mobile__primary menu-grid">
+                <li class="menu-grid__item menu-grid__item--cta">
+                    <a href="#" class="item-grid item-grid--cta" title="Crea tu diseño">
+                        <i class="item-grid__icon icon icon-design-tools"></i>
+                        <p class="item-grid__text">Crea tu diseño</p>
+                    </a>
+                </li>
+                <li class="menu-grid__item menu-grid__item--big">
+                    <a href="#" class="item-grid item-grid--big" title="Vinilos decorativos">
+                        <i class="item-grid__icon icon icon-sticker"></i>
+                        <p class="item-grid__text">Vinílos decorativos</p>
+                    </a>
+                </li>
+                <li class="menu-grid__item">
+                    <a href="#" class="item-grid" title="Alfombras vinílicas">
+                        <i class="item-grid__icon icon icon-rug"></i>
+                        <p class="item-grid__text">Alfombras vinílicas</p>
+                    </a>
+                </li>
+                <li class="menu-grid__item">
+                    <a href="#" class="item-grid" title="Papeles pintados">
+                        <i class="item-grid__icon icon icon-wallpaper"></i>
+                        <p class="item-grid__text">Papeles pintados</p>
+                    </a>
+                </li>
+                <li class="menu-grid__item">
+                    <a href="#" class="item-grid" title="Cuadros">
+                        <i class="item-grid__icon icon icon-chart"></i>
+                        <p class="item-grid__text">Cuadros</p>
+                    </a>
+                </li>
+                <li class="menu-grid__item">
+                    <a href="#" class="item-grid" title="Fotomurales">
+                        <i class="item-grid__icon icon icon-wall"></i>
+                        <p class="item-grid__text">Fotomurales</p>
+                    </a>
+                </li>
+                <li class="menu-grid__item">
+                    <a href="#" class="item-grid" title="Estores">
+                        <i class="item-grid__icon icon icon-blind"></i>
+                        <p class="item-grid__text">Estores</p>
+                    </a>
+                </li>
+                <li class="menu-grid__item">
+                    <a href="#" class="item-grid" title="Manteles individuales">
+                        <i class="item-grid__icon icon icon-tablecloth"></i>
+                        <p class="item-grid__text">Manteles individuales</p>
+                    </a>
+                </li>
+                <li class="menu-grid__item">
+                    <a href="#" class="item-grid" title="Posavasos">
+                        <i class="item-grid__icon icon icon-coaster"></i>
+                        <p class="item-grid__text">Posavasos</p>
+                    </a>
+                </li>
+                <li class="menu-grid__item">
+                    <a href="#" class="item-grid" title="Alfombrillas de ratón">
+                        <i class="item-grid__icon icon icon-mouse-pad"></i>
+                        <p class="item-grid__text">Alfombrillas de ratón</p>
+                    </a>
+                </li>
+                <li class="menu-grid__item">
+                    <a href="#" class="item-grid" title="Camisetas">
+                        <i class="item-grid__icon icon icon-shirt"></i>
+                        <p class="item-grid__text">Camisetas</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu-mobile__secondary">
+                <li>
+                    <a href="#" class="menu-item" title="Inspiración">Inspiración</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Sticker Finder">Sticker Finder</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Realidad Aumentada">Realidad Aumentada</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Newsletter">Newsletter</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="submenu-mobile">
+            <a href="#" class="back-menu" title="Volver al menú">
+                <i class="back-menu__icon icon icon-arrow-right"></i>
+                <p class="back-menu__text">Volver</p>
+            </a>
+            <ul aria-label="Ubicación">
+                <li>
+                    <a href="#" class="menu-item" title="Salón">Salón</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Cocina">Cocina</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Habitación">Habitación</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Baño">Baño</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Pasillo">Pasillo</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Habitación de niños">Habitación de niños</a>
+                </li>
+            </ul>
+            <ul aria-label="Temática">
+                <li>
+                    <a href="#" class="menu-item" title="Cenefas">Cenefas</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Infantiles">Infantiles</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Flores">Flores</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Perros y gatos">Perros y gatos</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Textos">Textos</a>
+                </li>
+                <li>
+                    <a href="#" class="menu-item" title="Translúcidos">Translúcidos</a>
+                </li>
+            </ul>
+        </nav>
+
+        <ul class="menu menu--bottom">
+            <li>
+                <a href="#" title="Sticker Finder">
+                    <i class="menu__item icon icon-search-stick"></i>
+                    <p>Sticker Finder</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Crea tu diseño">
+                    <i class="menu__item icon icon-design-tools"></i>
+                    <p>Crea tu diseño</p>
+                </a>
+            </li>
+            <li>
+                <a href="#" title="Inspírate">
+                    <i class="menu__item icon icon-collection"></i>
+                    <p>Inspírate</p>
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <h1>Vinilos decorativos, papel pintado, alfombras vinílicas y estores</h1>
+        <h4>Un catálogo de 16.983 diseños para la decoración del hogar o de la empresa.</h4>
+        <div class="content content--1"></div>
+        <div class="content content--2"></div>
+        <div class="content content--3"></div>
+        <div class="content content--4"></div>
+        <div class="content content--5"></div>
+    </main>
+
+    <footer></footer>
+
+    <script src="dist/js/scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'tenviniloBruno';
+  src:
+    url('fonts/tenviniloBruno.ttf?3ptgbb') format('truetype'),
+    url('fonts/tenviniloBruno.woff?3ptgbb') format('woff'),
+    url('fonts/tenviniloBruno.svg?3ptgbb#tenviniloBruno') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tenviniloBruno' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-hamburguer:before {
+  content: "\e912";
+}
+.icon-user:before {
+  content: "\e913";
+}
+.icon-cart:before {
+  content: "\e914";
+}
+.icon-arrow-right-circle:before {
+  content: "\e901";
+}
+.icon-blind:before {
+  content: "\e903";
+}
+.icon-caret:before {
+  content: "\e904";
+}
+.icon-chart:before {
+  content: "\e905";
+}
+.icon-coaster:before {
+  content: "\e906";
+}
+.icon-collection:before {
+  content: "\e907";
+}
+.icon-design-tools:before {
+  content: "\e900";
+}
+.icon-mouse-pad:before {
+  content: "\e908";
+}
+.icon-phone-flip:before {
+  content: "\e909";
+}
+.icon-rug:before {
+  content: "\e90a";
+}
+.icon-search-stick:before {
+  content: "\e90b";
+}
+.icon-search:before {
+  content: "\e90c";
+}
+.icon-shirt:before {
+  content: "\e90d";
+}
+.icon-sticker:before {
+  content: "\e90e";
+}
+.icon-tablecloth:before {
+  content: "\e90f";
+}
+.icon-wall:before {
+  content: "\e910";
+}
+.icon-wallpaper:before {
+  content: "\e911";
+}
