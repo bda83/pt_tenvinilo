@@ -1,0 +1,35 @@
+.hamburger-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 1px;
+    margin-right: 0;
+
+    &__stick {
+        display: block;
+        background-color: #1A1A1A;
+        width: 24px;
+        transition: all 300ms ease-in-out;
+        /* The following 2 properties are essential in creating the "X" when the hamburger is clicked. If you change just 1 of the 2, then you need to find the proper combination for the other one */
+        height: 2px;
+        margin: 6px auto;
+    }
+
+    &.active {
+        background-color: #1A1A1A;
+    }
+
+    &.active &__stick:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color:#FFFFFF;
+    }
+
+    &.active &__stick:nth-child(2) {
+        opacity: 0
+    }
+    
+    &.active &__stick:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: #FFFFFF;
+    }
+}

@@ -1,0 +1,107 @@
+@import 'mixins';
+
+@import 'hamburger-icon';
+
+
+
+.promotions {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+
+    -webkit-align-items: center;
+    align-items: center;
+
+    padding: 8px 16px;
+    background-color: #1A1A1A;
+    color: #FFFFFF;
+
+    &__icon {
+        color: #FBBC04;
+        margin-left: 8px;
+        @include font-style(12px);
+    }
+    
+    &__text {
+        @include font-style(12px, 700);
+
+        &--important {
+            color: #FBBC04;
+        }
+    }
+}
+
+.header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+
+    -webkit-align-items: center;
+    align-items: center;
+
+    padding: 8px 16px;
+}
+
+.logoTenvinilo {
+    width: 48px;
+    height: 48px;
+    margin: 4px;
+}
+
+.menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+
+    -webkit-align-items: center;
+    align-items: center;
+    
+    &__item-icon {
+        font-size: 30px;
+        margin: 0 8px;
+        cursor: pointer;
+    }
+
+    &__item-text {
+        @include font-style(11px, 500);
+        margin: 4px 8px;
+    }
+
+    &--bottom {
+        background-color: rgba(255, 255, 255, 0.8);;
+        height: 72px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+
+        -webkit-justify-content: center;
+        justify-content: center;
+
+        & > * {
+            width: 25%;
+        }
+    }
+}

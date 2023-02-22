@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../../src/scss/main.scss",
+		"../../src/scss/mixins.scss"
+	],
+	"sourcesContent": [
+		"@import 'mixins';\n\nmain {\n    width: 100vw;\n    padding: 0 16px;\n}\n\n.content {\n    width: 100%;\n    height: 220px;\n    margin: 8px 0;\n    background-color: #dbdbdb;\n    opacity: .7;\n}\n\nh1 {\n    @include font-style(28px, 700);\n    text-align: center;\n    margin: 32px 0 8px;\n}\n\nh4 {\n    @include font-style(15px, 400);\n    text-align: center;\n    margin: 4px 0 16px;\n}",
+		"// --------------------------------------------------\n// Font style mixins\n// --------------------------------------------------\n\n@mixin font-style($size: 14px, $weight: 400, $height: auto){\n    font-size: $size;\n    font-weight: $weight;\n    line-height: $height;\n}"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,IAAI,AAAC,CACD,KAAK,CAAE,KAAK,CACZ,OAAO,CAAE,MAAM,CAClB,AAED,AAAA,QAAQ,AAAC,CACL,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,KAAK,CACb,MAAM,CAAE,KAAK,CACb,gBAAgB,CAAE,OAAO,CACzB,OAAO,CAAE,EAAE,CACd,AAED,AAAA,EAAE,AAAC,CCVC,SAAS,CDWW,IAAI,CCVxB,WAAW,CDUe,GAAG,CCT7B,WAAW,CAHuC,IAAI,CDatD,UAAU,CAAE,MAAM,CAClB,MAAM,CAAE,UAAU,CACrB,AAED,AAAA,EAAE,AAAC,CChBC,SAAS,CDiBW,IAAI,CChBxB,WAAW,CDgBe,GAAG,CCf7B,WAAW,CAHuC,IAAI,CDmBtD,UAAU,CAAE,MAAM,CAClB,MAAM,CAAE,UAAU,CACrB"
+}

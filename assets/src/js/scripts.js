@@ -5,10 +5,12 @@ const itemsInGrid = document.getElementsByClassName("item-grid");
 const navSubmenu = document.querySelector(".submenu-mobile");
 const backToMenu = document.querySelector(".back-menu");
 
-/*                                                  //
-//      MENU (mobile)                               //
-//      open/close with hamburger icon              //
-*/                                                  //
+
+
+// --------------------------------------------------
+// MENU (mobile)
+// open/close with hamburger icon
+// --------------------------------------------------
 
 // open mobile menu with hamburger icon
 hamburgerIcon.addEventListener("click", () => {
@@ -24,10 +26,11 @@ hamburgerIcon.addEventListener("click", () => {
 })
 
 
-/*                                                  //
-//      SUBMENU (mobile)                            //
-//      open/close with options in menu             //
-*/                                                  //
+
+// --------------------------------------------------
+// SUBMENU (mobile)
+// open/close with options in menu
+// --------------------------------------------------
 
 // open mobile submenu
 for (var i=0; i< itemsInGrid.length; i++) {
@@ -46,10 +49,11 @@ backToMenu.addEventListener("click", () => {
 })
 
 
-/*                                                  //
-//      MENU & SUBMENU (mobile)                     //
-//      Close when any option is selected           //
-*/                                                  //
+
+// --------------------------------------------------
+// MENU & SUBMENU (mobile)
+// Close when any option is selected
+// --------------------------------------------------
 
 document.querySelectorAll(".menu-item").forEach(n => n.addEventListener("click", () => {
     hamburgerIcon.classList.remove("active");
@@ -59,10 +63,10 @@ document.querySelectorAll(".menu-item").forEach(n => n.addEventListener("click",
 }))
 
 
-/*                                                  //
-//      GENERATE RANDOM GRADIENT (extras)           //
-//      Delete                                      //
-*/                                                  //
+
+// --------------------------------------------------
+// GENERATE RANDOM GRADIENT (extra)
+// --------------------------------------------------
 
 function generate() {
     for ( var j = 0; j < 5; j++ ) {

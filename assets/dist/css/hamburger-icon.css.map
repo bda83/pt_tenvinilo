@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "hamburger-icon.css",
+	"sources": [
+		"../../src/scss/hamburger-icon.scss"
+	],
+	"sourcesContent": [
+		".hamburger-icon {\n    width: 32px;\n    height: 32px;\n    border-radius: 50%;\n    padding: 1px;\n    margin-right: 0;\n\n    &__stick {\n        display: block;\n        background-color: #1A1A1A;\n        width: 24px;\n        transition: all 300ms ease-in-out;\n        /* The following 2 properties are essential in creating the \"X\" when the hamburger is clicked. If you change just 1 of the 2, then you need to find the proper combination for the other one */\n        height: 2px;\n        margin: 6px auto;\n    }\n\n    &.active {\n        background-color: #1A1A1A;\n    }\n\n    &.active &__stick:nth-child(1) {\n        transform: translateY(8px) rotate(45deg);\n        background-color:#FFFFFF;\n    }\n\n    &.active &__stick:nth-child(2) {\n        opacity: 0\n    }\n    \n    &.active &__stick:nth-child(3) {\n        transform: translateY(-8px) rotate(-45deg);\n        background-color: #FFFFFF;\n    }\n}"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,eAAe,AAAC,CACZ,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,aAAa,CAAE,GAAG,CAClB,OAAO,CAAE,GAAG,CACZ,YAAY,CAAE,CAAC,CA6BlB,AA3BI,AAAD,sBAAQ,AAAC,CACL,OAAO,CAAE,KAAK,CACd,gBAAgB,CAAE,OAAO,CACzB,KAAK,CAAE,IAAI,CACX,UAAU,CAAE,qBAAqB,CAEjC,MAAM,CAAE,GAAG,CACX,MAAM,CAAE,QAAQ,CACnB,AAfL,AAiBI,eAjBW,AAiBV,OAAO,AAAC,CACL,gBAAgB,CAAE,OAAO,CAC5B,AAnBL,AAqBI,eArBW,AAqBV,OAAO,CAAE,sBAAO,AAAA,UAAW,CAAA,CAAC,CAAE,CAC3B,SAAS,CAAE,eAAe,CAAC,aAAa,CACxC,gBAAgB,CAAC,OAAO,CAC3B,AAxBL,AA0BI,eA1BW,AA0BV,OAAO,CAAE,sBAAO,AAAA,UAAW,CAAA,CAAC,CAAE,CAC3B,OAAO,CAAE,CACb,CAAC,AA5BL,AA8BI,eA9BW,AA8BV,OAAO,CAAE,sBAAO,AAAA,UAAW,CAAA,CAAC,CAAE,CAC3B,SAAS,CAAE,gBAAgB,CAAC,cAAc,CAC1C,gBAAgB,CAAE,OAAO,CAC5B"
+}
